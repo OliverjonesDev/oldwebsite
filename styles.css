@@ -31,6 +31,10 @@ h3 {
     src: url("fonts/agency-fb_[allfont.net].ttf");
 }
 
+.iframe-padding {
+    padding: 75%;
+}
+
 body {
     font-family: agency-fb, arial;
     display: flex;
@@ -123,13 +127,14 @@ p {
 }
 
 .col {
-    padding: 10px;
     flex-direction: row;
     width: 50%;
 }
 
 .colImg {
     text-align: center;
+    padding-right: 5%;
+    padding-left: 5%;
 }
 
 .row {
@@ -147,6 +152,11 @@ p {
     .col {
         width: 100%;
     }
+}
+
+.col iframe {
+    width: 75%;
+    height: 75%;
 }
 
 .col img {
