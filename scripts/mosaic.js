@@ -10,10 +10,13 @@ function setup() {
 }
 
 function draw() {
+
+    //all rects are being created from the center of the page, and then added into the pages using absolute pixel values.
+    //I tried to make this as responsive as I could by depending on the users screen size it would flip flop between drawing different sets but 
     clear();
     noStroke();
     fill("#E91D50");
-    rect((windowWidth / 2) - 625, (windowHeight / 2) - 290, 300, 300);
+    rect((windowWidth / 2) - 625, (windowHeight / 2) - 290, 475, 300);
     rect((windowWidth / 2) - 600, (windowHeight / 2) + 400, 1500, 200);
     fill(247, 167, 62);
     rect((windowWidth / 2) + 300, (windowHeight / 2) - 180, 300, 450);
