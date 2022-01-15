@@ -17,7 +17,7 @@ const colours = [
     "rgb(74, 196, 217)"
 ]
 
-var hoverOn = true;
+var hoverOn = false;
 
 function windowResized() {
     resizeCanvas(windowWidth, windowHeight);
