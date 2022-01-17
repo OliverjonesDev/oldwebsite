@@ -21,11 +21,10 @@ function setup() {
 
 function draw() {
     noStroke();
-
     //all rects are being created from the center of the page, and then added into the pages using absolute pix2el values.
     //I tried to make this as responsive as I could by2 depending on the users screen size it would flip flop between drawing different sets but 
-
     for (var i = 0; i < rects.length; i++) {
+        console.log(rects[i].x / 2, rects[i].y / 2);
         fill(rects[i].colour);
         rect((windowWidth / 2) + rects[i].x, (windowHeight / 2) + rects[i].y, rects[i].x2, rects[i].y2);
     }
