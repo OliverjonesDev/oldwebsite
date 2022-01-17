@@ -34,22 +34,8 @@ function draw() {
     //all rects are being created from the center of the page, and then added into the pages using absolute pix2el values.
     //I tried to make this as responsive as I could by2 depending on the users screen size it would flip flop between drawing different sets but 
     for (var i = 0; i < rects.length; i++) {
-<<<<<<< HEAD
         console.log(rects[i].x / 2, rects[i].y / 2);
         fill(rects[i].colour);
-=======
-        //Controlled by the global function "hoverOn"
-        if (hoverOn)
-        {
-            //Pass the current 
-            hoverFunct(i);
-        }
-        else
-        {
-            fill(rects[i].colour);
-        }
-
->>>>>>> 503d800be09d42d85eec5a0cfe074dcb44cfc338
         rect((windowWidth / 2) + rects[i].x, (windowHeight / 2) + rects[i].y, rects[i].x2, rects[i].y2);
     }
 }
